@@ -1,3 +1,16 @@
+# Repository-specific ignores
+Data_cobb2060
+
+project0_eda/.ipynb_checkpoints
+project0_eda/brca_tcga
+project0_eda/brca_tcga.tar.gz
+
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
