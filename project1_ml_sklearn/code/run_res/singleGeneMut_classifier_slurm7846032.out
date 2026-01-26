@@ -1,0 +1,112 @@
+# Confirm Python version and conda environment
+echo "Using Python: $(which python)"
+Using Python: /ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/bin/python
+python -V
+Python 3.11.9
+echo "Conda env: $CONDA_DEFAULT_ENV"
+Conda env: hugen_general
+
+start_time=$(date +%s)
+
+python singleGeneMut_classifier_run.py -e brca_tcga/data_mrna_seq_v2_rsem.txt -m brca_tcga/data_mutations.txt -p brca_tcga/data_mrna_seq_v2_rsem.txt  -g RYR2  AKAP9 DNAH11 TP53 UTRN HERC2 DNAH2 PIK3CA -o tcga_tcga
+==== Loaded /ihome/hpark/til177/GitHub/cobb2060-2026s/Data_cobb2060/proj1/brca_tcga/data_mrna_seq_v2_rsem.txt ====
+min key: brca_tcga/data_mrna_seq_v2_rsem.txt min value: 1
+
+=== brca_tcga/data_mrna_seq_v2_rsem.txt ===
+Removing 73 duplicate genes
+Dropped 0 all-NaN genes
+Dropped 0 genes (>50% missing)
+Max value before norm: 2066039.16
+--Applied log2CPM--
+Max value after norm: 16.58
+Shape: (20514, 1100)
+
+Common genes: 20514
+Merged expression: (20514, 1100)
+==== Loaded /ihome/hpark/til177/GitHub/cobb2060-2026s/Data_cobb2060/proj1/brca_tcga/data_mutations.txt ====
+dict_keys(['brca_tcga/data_mutations.txt'])
+brca_tcga/data_mutations.txt
+Merged mutation: (17680, 982)
+Common genes: 15194
+Common samples: 979
+Aligned expression: (15194, 979)
+Aligned mutation: (15194, 979)
+==== Loaded /ihome/hpark/til177/GitHub/cobb2060-2026s/Data_cobb2060/proj1/brca_tcga/data_mrna_seq_v2_rsem.txt ====
+2040897.3818
+Removing 9 duplicate columns in test data
+Test data shape: (1100, 15154)
+
+=== UTRN ===
+Features: 15154
+After variance filter: 13062 features
+  ElasticNet: AUC = 0.655 ± 0.135
+  L1: AUC = 0.626 ± 0.155
+  RandomForest: AUC = 0.537 ± 0.107
+  XGBoost: AUC = 0.622 ± 0.139
+  Best model: ElasticNet (AUC=0.655)
+
+=== DNAH11 ===
+Features: 15154
+After variance filter: 13062 features
+  ElasticNet: AUC = 0.598 ± 0.069
+  L1: AUC = 0.618 ± 0.037
+  RandomForest: AUC = 0.697 ± 0.075
+  XGBoost: AUC = 0.711 ± 0.071
+  Best model: XGBoost (AUC=0.711)
+
+=== PIK3CA ===
+Features: 15154
+After variance filter: 13062 features
+  ElasticNet: AUC = 0.777 ± 0.016
+  L1: AUC = 0.789 ± 0.017
+  RandomForest: AUC = 0.794 ± 0.027
+  XGBoost: AUC = 0.773 ± 0.012
+  Best model: RandomForest (AUC=0.794)
+
+=== AKAP9 ===
+Skipping: not in mutation data
+
+=== DNAH2 ===
+Features: 15154
+After variance filter: 13062 features
+  ElasticNet: AUC = 0.398 ± 0.141
+  L1: AUC = 0.391 ± 0.150
+  RandomForest: AUC = 0.503 ± 0.113
+  XGBoost: AUC = 0.492 ± 0.070
+  Best model: RandomForest (AUC=0.503)
+
+=== HERC2 ===
+Features: 15154
+After variance filter: 13062 features
+  ElasticNet: AUC = 0.523 ± 0.107
+  L1: AUC = 0.530 ± 0.103
+  RandomForest: AUC = 0.475 ± 0.075
+  XGBoost: AUC = 0.351 ± 0.095
+  Best model: L1 (AUC=0.530)
+
+=== RYR2 ===
+Skipping: not in mutation data
+
+=== TP53 ===
+Features: 15154
+After variance filter: 13062 features
+  ElasticNet: AUC = 0.916 ± 0.022
+  L1: AUC = 0.920 ± 0.020
+  RandomForest: AUC = 0.891 ± 0.031
+  XGBoost: AUC = 0.913 ± 0.028
+  Best model: L1 (AUC=0.920)
+
+==================================================
+Summary:
+UTRN: ElasticNet, AUC=0.655
+DNAH11: XGBoost, AUC=0.711
+PIK3CA: RandomForest, AUC=0.794
+DNAH2: RandomForest, AUC=0.503
+HERC2: L1, AUC=0.530
+TP53: L1, AUC=0.920
+
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+echo "Duration: $duration seconds"
+Duration: 1694 seconds
+
