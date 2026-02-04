@@ -1,0 +1,159 @@
+# Confirm Python version and conda environment
+echo "Using Python: $(which python)"
+Using Python: /ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/bin/python
+python -V
+Python 3.11.9
+echo "Conda env: $CONDA_DEFAULT_ENV"
+Conda env: hugen_general
+
+start_time=$(date +%s)
+
+# python nmf_als_fusedlasso.py -b ../../data/chr10 -c chr10 -s 1000000 -e 1500000  -k 15 -o chromosome_10_loadings.npy # evaluated against Gene
+# python nmf_als_fusedlasso.py -b ../../data/chr10 -c chr10 -s 1000000 -e 11000000 -k 10 -o chromosome_10_loadings_long.npy # evaluated against Gene
+python nmf_als_fusedlasso_2.py -b ../../data/chr10 -c chr10 -s 1000000 -e 1500000  -k 15 -o chromosome_10_loadings.npy # evaluated against Gene
+
+ 0 ../../data/chr10/SRF.K562.rawSignal.hg18.chr10.bw
+
+ 1 ../../data/chr10/GATA1.K562.rawSignal.hg18.chr10.bw
+
+ 2 ../../data/chr10/Max.K562.rawSignal.hg18.chr10.bw
+
+ 3 ../../data/chr10/CTCF.K562.Iyer.rawSignal.hg18.chr10.bw
+
+ 4 ../../data/chr10/cFos.K562.rawSignal.hg18.chr10.bw
+
+ 5 ../../data/chr10/H3K4me1.K562.rawSignal.hg18.chr10.bw
+
+ 6 ../../data/chr10/H3K4me2.K562.rawSignal.hg18.chr10.bw
+
+ 7 ../../data/chr10/JunD.K562.rawSignal.hg18.chr10.bw
+
+ 8 ../../data/chr10/NFE2.K562.rawSignal.hg18.chr10.bw
+
+ 9 ../../data/chr10/FAIRE.K562.rawSignal.hg18.chr10.bw
+
+ 10 ../../data/chr10/Pol2_8WG16.K562.Snyder.rawSignal.hg18.chr10.bw
+
+ 11 ../../data/chr10/Rad21.K562.rawSignal.hg18.chr10.bw
+
+ 12 ../../data/chr10/XRCC4.K562.rawSignal.hg18.chr10.bw
+
+ 13 ../../data/chr10/H3K36me3.K562.rawSignal.hg18.chr10.bw
+
+ 14 ../../data/chr10/cMyc.K562.Iyer.rawSignal.hg18.chr10.bw
+
+ 15 ../../data/chr10/Pol2_CTD4H8.K562.rawSignal.hg18.chr10.bw
+
+ 16 ../../data/chr10/H3K9me1.K562.rawSignal.hg18.chr10.bw
+
+ 17 ../../data/chr10/CTCF.K562.Bernstein.rawSignal.hg18.chr10.bw
+
+ 18 ../../data/chr10/ZNF263.K562.rawSignal.hg18.chr10.bw
+
+ 19 ../../data/chr10/DNaseI.K562.Crawford.rawSignal.hg18.chr10.bw
+
+ 20 ../../data/chr10/Pol2_8WG16.K562.Myers.rawSignal.hg18.chr10.bw
+
+ 21 ../../data/chr10/cMyc.K562.Snyder.rawSignal.hg18.chr10.bw
+
+ 22 ../../data/chr10/H3K9ac.K562.rawSignal.hg18.chr10.bw
+
+ 23 ../../data/chr10/H3K27me3.K562.rawSignal.hg18.chr10.bw
+
+ 24 ../../data/chr10/DNaseI.K562.Stam.rawSignal.hg18.chr10.bw
+
+ 25 ../../data/chr10/H3K27ac.K562.rawSignal.hg18.chr10.bw
+
+ 26 ../../data/chr10/cJun.K562.rawSignal.hg18.chr10.bw
+
+ 27 ../../data/chr10/H4K20me1.K562.rawSignal.hg18.chr10.bw
+
+ 28 ../../data/chr10/GABP.K562.rawSignal.hg18.chr10.bw
+
+ 29 ../../data/chr10/NRSF.K562.rawSignal.hg18.chr10.bw
+(500000, 30)
+
+ Completed randomized_svd H initialization...
+
+ ==== Starting iteration 0 ====
+rel_err=0.988864 impr=nan
+
+ ==== Starting iteration 50 ====
+rel_err=0.140601 impr=-6.159e-01
+python nmf_als_fusedlasso_2.py -b ../../data/chr10 -c chr10 -s 1000000 -e 11000000 -k 10 -o chromosome_10_loadings_long.npy # evaluated against Gene
+
+ 0 ../../data/chr10/SRF.K562.rawSignal.hg18.chr10.bw
+
+ 1 ../../data/chr10/GATA1.K562.rawSignal.hg18.chr10.bw
+
+ 2 ../../data/chr10/Max.K562.rawSignal.hg18.chr10.bw
+
+ 3 ../../data/chr10/CTCF.K562.Iyer.rawSignal.hg18.chr10.bw
+
+ 4 ../../data/chr10/cFos.K562.rawSignal.hg18.chr10.bw
+
+ 5 ../../data/chr10/H3K4me1.K562.rawSignal.hg18.chr10.bw
+
+ 6 ../../data/chr10/H3K4me2.K562.rawSignal.hg18.chr10.bw
+
+ 7 ../../data/chr10/JunD.K562.rawSignal.hg18.chr10.bw
+
+ 8 ../../data/chr10/NFE2.K562.rawSignal.hg18.chr10.bw
+
+ 9 ../../data/chr10/FAIRE.K562.rawSignal.hg18.chr10.bw
+
+ 10 ../../data/chr10/Pol2_8WG16.K562.Snyder.rawSignal.hg18.chr10.bw
+
+ 11 ../../data/chr10/Rad21.K562.rawSignal.hg18.chr10.bw
+
+ 12 ../../data/chr10/XRCC4.K562.rawSignal.hg18.chr10.bw
+
+ 13 ../../data/chr10/H3K36me3.K562.rawSignal.hg18.chr10.bw
+
+ 14 ../../data/chr10/cMyc.K562.Iyer.rawSignal.hg18.chr10.bw
+
+ 15 ../../data/chr10/Pol2_CTD4H8.K562.rawSignal.hg18.chr10.bw
+
+ 16 ../../data/chr10/H3K9me1.K562.rawSignal.hg18.chr10.bw
+
+ 17 ../../data/chr10/CTCF.K562.Bernstein.rawSignal.hg18.chr10.bw
+
+ 18 ../../data/chr10/ZNF263.K562.rawSignal.hg18.chr10.bw
+
+ 19 ../../data/chr10/DNaseI.K562.Crawford.rawSignal.hg18.chr10.bw
+
+ 20 ../../data/chr10/Pol2_8WG16.K562.Myers.rawSignal.hg18.chr10.bw
+
+ 21 ../../data/chr10/cMyc.K562.Snyder.rawSignal.hg18.chr10.bw
+
+ 22 ../../data/chr10/H3K9ac.K562.rawSignal.hg18.chr10.bw
+
+ 23 ../../data/chr10/H3K27me3.K562.rawSignal.hg18.chr10.bw
+
+ 24 ../../data/chr10/DNaseI.K562.Stam.rawSignal.hg18.chr10.bw
+
+ 25 ../../data/chr10/H3K27ac.K562.rawSignal.hg18.chr10.bw
+
+ 26 ../../data/chr10/cJun.K562.rawSignal.hg18.chr10.bw
+
+ 27 ../../data/chr10/H4K20me1.K562.rawSignal.hg18.chr10.bw
+
+ 28 ../../data/chr10/GABP.K562.rawSignal.hg18.chr10.bw
+
+ 29 ../../data/chr10/NRSF.K562.rawSignal.hg18.chr10.bw
+(10000000, 30)
+
+ Completed randomized_svd H initialization...
+
+ ==== Starting iteration 0 ====
+rel_err=0.965512 impr=nan
+
+ ==== Starting iteration 50 ====
+rel_err=0.560130 impr=-9.090e-01
+
+
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+echo "Duration: $duration seconds"
+Duration: 268 seconds
+

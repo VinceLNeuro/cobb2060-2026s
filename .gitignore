@@ -5,6 +5,10 @@ project0_eda/.ipynb_checkpoints
 project0_eda/brca_tcga
 project0_eda/brca_tcga.tar.gz
 
+project2_NMF_ALS_fusedlassoReg/code/__pycache__/
+project2_NMF_ALS_fusedlassoReg/code/.ipynb_checkpoints
+project2_NMF_ALS_fusedlassoReg/code/submission/__pycache__/
+project2_NMF_ALS_fusedlassoReg/code/submission/*.npy
 
 
 

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+DEST="/ihome/hpark/til177/GitHub/cobb2060-2026s/Data_cobb2060/proj2"
+mkdir -p ${DEST}
+URL="https://bits.csb.pitt.edu/cobb2060/assign2/data/chr10/"
+
+# -np: no parent
+# -nH: no hostname in directories (bits.csb.pitt.edu), -cut-dirs=3: cut first 3 dirs (/cobb2060/assign2/data) -> chr10
+wget -r  -np  -nH --cut-dirs=3  -R "index.html*"  -P "${DEST}"  "${URL}"
+
+# wget -P "${DEST}" "https://bits.csb.pitt.edu/cobb2060/assign2/data/Annotation_hg18.Gene.bw"
