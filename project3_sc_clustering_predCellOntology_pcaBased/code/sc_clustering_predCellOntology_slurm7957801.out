@@ -1,0 +1,91 @@
+# Confirm Python version and conda environment
+echo "Using Python: $(which python)"
+Using Python: /ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/bin/python
+python -V
+Python 3.11.9
+echo "Conda env: $CONDA_DEFAULT_ENV"
+Conda env: hugen_general
+
+# set up data directory
+DATADIR='/ihome/hpark/til177/GitHub/cobb2060-2026s/Data_cobb2060/proj3'
+
+
+######## RUN & TIME ########
+start_time=$(date +%s)
+
+echo "=== Task 1: Unsupervised clustering (k=4) ==="
+=== Task 1: Unsupervised clustering (k=4) ===
+t1=$(date +%s)
+python sc_clustering_predCellOntology.py -d $DATADIR/mouse_spatial_brain_section1_modified.h5ad -k 4 -o clusters_1.npy # unsupervised clustering
+/ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+
+>> Used column exisiting filter
+(3293, 1806)
+echo "Task 1 duration: $(($(date +%s) - t1)) seconds"
+Task 1 duration: 267 seconds
+
+
+echo "=== Task 2: Unsupervised clustering (k=8) ==="
+=== Task 2: Unsupervised clustering (k=8) ===
+t2=$(date +%s)
+python sc_clustering_predCellOntology.py -d $DATADIR/mouse_cortex_methods_comparison_log1p_cpm_modified.h5ad -k 8 -o clusters_2.npy
+/ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+
+>> Used column exisiting filter
+(2345, 1802)
+echo "Task 2 duration: $(($(date +%s) - t2)) seconds"
+Task 2 duration: 122 seconds
+
+
+echo "=== Task 3: Supervised labeling (brain section) ==="
+=== Task 3: Supervised labeling (brain section) ===
+t3=$(date +%s)
+python sc_clustering_predCellOntology.py -t $DATADIR/mouse_spatial_brain_section0.h5ad -d $DATADIR/mouse_spatial_brain_section1_modified.h5ad -o clusters_3.npy
+/ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/lib/python3.11/site-packages/anndata/_core/anndata.py:1756: UserWarning: Observation names are not unique. To make them unique, call `.obs_names_make_unique`.
+  utils.warn_names_duplicates("obs")
+/ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+Numb of common genes shared between two data: 31053
+
+>> Used column exisiting filter
+
+>> Used column exisiting filter
+Combined data shape: (6646, 531)
+Ground Truth Labels: Counter({'neuron': 1582, 'astrocyte': 760, 'oligodendrocyte': 598, 'oligodendrocyte precursor cell': 413})
+['oligodendrocyte' 'neuron' 'oligodendrocyte precursor cell' 'neuron'
+ 'astrocyte']
+[2 1 3 1 0]
+Counter({'neuron': 1599, 'astrocyte': 758, 'oligodendrocyte': 530, 'oligodendrocyte precursor cell': 406})
+echo "Task 3 duration: $(($(date +%s) - t3)) seconds"
+Task 3 duration: 167 seconds
+
+
+echo "=== Task 4: Supervised labeling (cross-domain) ==="
+=== Task 4: Supervised labeling (cross-domain) ===
+t4=$(date +%s)
+python sc_clustering_predCellOntology.py -t $DATADIR/mouse_spatial_brain_section0.h5ad -d $DATADIR/mouse_cortex_methods_comparison_log1p_cpm_modified.h5ad -o clusters_4.npy
+/ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/lib/python3.11/site-packages/anndata/_core/merge.py:1434: UserWarning: Only some AnnData objects have `.raw` attribute, not concatenating `.raw` attributes.
+  warn(
+/ix/ccdg/storage3/til177/custom_miniconda/envs/hugen_general/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+Numb of common genes shared between two data: 22603
+
+>> Used column exisiting filter
+
+>> Used column exisiting filter
+Combined data shape: (5698, 242)
+Ground Truth Labels: Counter({'neuron': 1582, 'astrocyte': 760, 'oligodendrocyte': 598, 'oligodendrocyte precursor cell': 413})
+['oligodendrocyte' 'neuron' 'oligodendrocyte precursor cell' 'neuron'
+ 'astrocyte']
+[2 1 3 1 0]
+Counter({'oligodendrocyte': 2182, 'oligodendrocyte precursor cell': 159, 'neuron': 4})
+echo "Task 4 duration: $(($(date +%s) - t4)) seconds"
+Task 4 duration: 167 seconds
+
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+echo "Total duration: $duration seconds"
+Total duration: 723 seconds
+
