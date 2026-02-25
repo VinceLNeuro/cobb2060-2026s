@@ -13,6 +13,11 @@ project2_NMF_ALS_fusedlassoReg/code/submission/*.npy
 project3_sc_clustering_predCellOntology_pcaBased/code/.ipynb_checkpoints
 project3_sc_clustering_predCellOntology_pcaBased/code/*.npy
 
+project4_xgbReg_chromAccess_pred/.ipynb_checkpoints
+project4_xgbReg_chromAccess_pred/sbatch.stdout
+project4_xgbReg_chromAccess_pred/code/*.npy
+project4_xgbReg_chromAccess_pred/code/.ipynb_checkpoints
+
 
 
 
