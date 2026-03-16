@@ -18,7 +18,16 @@ project4_xgbReg_chromAccess_pred/sbatch.stdout
 project4_xgbReg_chromAccess_pred/code/*.npy
 project4_xgbReg_chromAccess_pred/code/.ipynb_checkpoints
 
+project5_CNN_cellImg_classifier/data
+project5_CNN_cellImg_classifier/code/.ipynb_checkpoints
+project5_CNN_cellImg_classifier/code/__pycache__/
 
+project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep/out
+project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep/wandb
+project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep2/out
+project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep2/wandb
+project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep3_bayes/out
+project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep3_bayes/wandb
 
 
 # Byte-compiled / optimized / DLL files

@@ -1,0 +1,88 @@
+# ------------------------------------------------------------------
+# W&B Sweep Config
+#
+# - Explore [7] hyperparameters across [20] runs with [_bayesian search_].
+# - Optimizes val/epoch_acc (stratified 80/20 hold-out)
+# 
+# - Usage: 
+#     wandb sweep --project moa-cnn-classifier sweep_config_v3_bayes.yaml
+#     wandb agent --count 1 YOUR_ENTITY/moa-cnn-classifier/SWEEP_ID
+# 
+# - Reference: 
+#   https://www.youtube.com/watch?v=9zrmUIlScdY
+#   https://docs.wandb.ai/models/sweeps/define-sweep-configuration#cli
+# ------------------------------------------------------------------
+
+program: train_ExportModel_wandb_sweep.py #training script
+
+method: bayes
+run_cap: 20    # stop after 20 runs
+
+metric:
+  name: val/epoch_acc  # Optimize VALIDATION accuracy - Need to match the name in log in script
+  goal: maximize
+
+# early_terminate:
+#   type: hyperband # Periodically check all running sweeps and kills the worst performs
+#   min_iter: 5     # Don't kill any run until the second epoch (all runs have a chance)
+#   eta: 3          # At each ckpt, keep only top 1/3 of runs
+  
+
+# Parameters to sweep
+parameters:
+
+  # 1. learning rate (good res default 0.001) - learned from 1st sweep
+  lr: 
+    distribution: log_uniform_values #log-uniform: explores orders of magnitude
+    min: 0.0001
+    max: 0.003 #to keep 0.001
+
+  # 2. Number of convolutional blocks (good res default 4)
+  ##    learn from sweep1: drop 3, but cap at 5 due to the maxpooling layer practical limit
+  n_conv_blocks:
+    values: [4, 5]
+
+  # 3. Dropout rate (regularization) (good res default=0.5)
+  dropout_p:
+    distribution: uniform
+    min: 0.1
+    max: 0.7
+
+  # 4. Fully connected layer size (good res default=256)
+  fc_size:
+    values: [256, 512] #from sweep1, drop smaller fc
+
+  # 5. Batch size (good res default=20)
+  batch_size:
+    values: [16, 32, 64]
+
+  # 6. Weight decay (L2 regularization) (good res default=1e-4)
+  weight_decay:
+    distribution: log_uniform_values
+    min: 0.000001
+    max: 0.0003 #from sweep1 - keep 1e-4
+
+  # 7. Input image size
+  img_size:
+    values: [128, 224] #224 is ImageNet standard
+
+
+  ### Fixed parameters (not swept) ###
+  max_epochs:
+    value: 30
+
+  val_fraction:
+    value: 0.2           # 80/20 stratified split
+
+  random_seed:
+    value: 42            # Fixed seed ensures all runs use identical splits
+
+  base_ch:
+    value: 32
+
+  train_data_dir:
+    value: "/net/dali/home/mscbio/til177/Github/cobb2060-2026s/project5_CNN_cellImg_classifier/data/train"
+
+  out:
+    value: "/net/dali/home/mscbio/til177/Github/cobb2060-2026s/project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep3_bayes/out/model_ExportModel_sweep"
+

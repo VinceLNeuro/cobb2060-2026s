@@ -1,0 +1,23 @@
+Using Python: /net/dali/home/mscbio/til177/.conda/envs/csb_gen/bin/python
+Python 3.12.12
+Conda env: csb_gen
+Device: cuda
+Split: 11544 train / 2886 val
+Epoch 0 Iteration 0: loss = 2.592881
+Epoch 0 Iteration 50: loss = 2.359651
+Epoch 0 Iteration 100: loss = 2.191735
+Epoch 0 Iteration 150: loss = 2.048321
+Epoch 0 Iteration 200: loss = 1.720540
+Epoch 0 Iteration 250: loss = 1.685989
+Epoch 0 Iteration 300: loss = 2.013988
+Epoch 0 Iteration 350: loss = 1.701258
+Epoch 0 Iteration 400: loss = 1.485276
+Epoch 0 Iteration 450: loss = 2.149102
+Epoch 0 Iteration 500: loss = 1.401771
+Epoch 0 Iteration 550: loss = 2.120233
+New best model saved (val_acc=0.4324)
+Epoch 0   train acc=0.3339, loss=1.8961
+Epoch 0   val   acc=0.4324, loss=1.6868
+Epoch time: 454.34015250205994
+Best val acc: 0.4324
+Total duration: 608 seconds

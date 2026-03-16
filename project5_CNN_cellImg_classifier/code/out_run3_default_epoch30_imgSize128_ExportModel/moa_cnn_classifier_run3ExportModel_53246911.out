@@ -1,0 +1,468 @@
+Using Python: /net/dali/home/mscbio/til177/.conda/envs/csb_gen/bin/python
+Python 3.12.12
+Conda env: csb_gen
+Device: cuda
+Split: 11544 train / 2886 val
+Epoch 0 Iteration 0: loss = 2.715048
+Epoch 0 Iteration 50: loss = 2.169821
+Epoch 0 Iteration 100: loss = 1.834173
+Epoch 0 Iteration 150: loss = 1.641759
+Epoch 0 Iteration 200: loss = 1.446886
+Epoch 0 Iteration 250: loss = 1.742521
+Epoch 0 Iteration 300: loss = 1.856258
+Epoch 0 Iteration 350: loss = 1.157719
+Epoch 0 Iteration 400: loss = 1.576495
+Epoch 0 Iteration 450: loss = 1.618322
+Epoch 0 Iteration 500: loss = 1.196545
+Epoch 0 Iteration 550: loss = 1.081740
+New best model saved (val_acc=0.5121)
+Epoch 0   train acc=0.4074, loss=1.6898
+Epoch 0   val   acc=0.5121, loss=1.2831
+Epoch time: 135.5922667980194
+Epoch 1 Iteration 0: loss = 1.306324
+Epoch 1 Iteration 50: loss = 1.181177
+Epoch 1 Iteration 100: loss = 1.215654
+Epoch 1 Iteration 150: loss = 1.302752
+Epoch 1 Iteration 200: loss = 1.140472
+Epoch 1 Iteration 250: loss = 0.652104
+Epoch 1 Iteration 300: loss = 1.014373
+Epoch 1 Iteration 350: loss = 0.850600
+Epoch 1 Iteration 400: loss = 0.931869
+Epoch 1 Iteration 450: loss = 0.942770
+Epoch 1 Iteration 500: loss = 0.891601
+Epoch 1 Iteration 550: loss = 0.816009
+New best model saved (val_acc=0.5163)
+Epoch 1   train acc=0.6076, loss=1.1271
+Epoch 1   val   acc=0.5163, loss=1.2584
+Epoch time: 108.19008779525757
+Epoch 2 Iteration 0: loss = 0.966766
+Epoch 2 Iteration 50: loss = 0.751393
+Epoch 2 Iteration 100: loss = 1.467532
+Epoch 2 Iteration 150: loss = 1.576460
+Epoch 2 Iteration 200: loss = 0.711604
+Epoch 2 Iteration 250: loss = 1.105493
+Epoch 2 Iteration 300: loss = 0.944619
+Epoch 2 Iteration 350: loss = 0.810300
+Epoch 2 Iteration 400: loss = 0.541204
+Epoch 2 Iteration 450: loss = 0.921627
+Epoch 2 Iteration 500: loss = 1.027611
+Epoch 2 Iteration 550: loss = 0.878084
+Epoch 2   train acc=0.6730, loss=0.9313
+Epoch 2   val   acc=0.5163, loss=1.2963
+Epoch time: 95.26916074752808
+Epoch 3 Iteration 0: loss = 0.810644
+Epoch 3 Iteration 50: loss = 0.907981
+Epoch 3 Iteration 100: loss = 0.824225
+Epoch 3 Iteration 150: loss = 0.831627
+Epoch 3 Iteration 200: loss = 0.934170
+Epoch 3 Iteration 250: loss = 0.651405
+Epoch 3 Iteration 300: loss = 0.912423
+Epoch 3 Iteration 350: loss = 0.525823
+Epoch 3 Iteration 400: loss = 1.020192
+Epoch 3 Iteration 450: loss = 0.816102
+Epoch 3 Iteration 500: loss = 0.464987
+Epoch 3 Iteration 550: loss = 0.873795
+New best model saved (val_acc=0.7249)
+Epoch 3   train acc=0.7186, loss=0.8223
+Epoch 3   val   acc=0.7249, loss=0.7178
+Epoch time: 81.08928561210632
+Epoch 4 Iteration 0: loss = 0.708521
+Epoch 4 Iteration 50: loss = 0.593924
+Epoch 4 Iteration 100: loss = 0.776635
+Epoch 4 Iteration 150: loss = 0.553632
+Epoch 4 Iteration 200: loss = 0.591935
+Epoch 4 Iteration 250: loss = 0.436468
+Epoch 4 Iteration 300: loss = 0.511997
+Epoch 4 Iteration 350: loss = 1.412203
+Epoch 4 Iteration 400: loss = 0.696319
+Epoch 4 Iteration 450: loss = 0.813099
+Epoch 4 Iteration 500: loss = 0.423901
+Epoch 4 Iteration 550: loss = 1.090698
+Epoch 4   train acc=0.7512, loss=0.7093
+Epoch 4   val   acc=0.7076, loss=0.7535
+Epoch time: 88.79949760437012
+Epoch 5 Iteration 0: loss = 0.464152
+Epoch 5 Iteration 50: loss = 0.577906
+Epoch 5 Iteration 100: loss = 0.952571
+Epoch 5 Iteration 150: loss = 0.795403
+Epoch 5 Iteration 200: loss = 0.525654
+Epoch 5 Iteration 250: loss = 0.469132
+Epoch 5 Iteration 300: loss = 0.696501
+Epoch 5 Iteration 350: loss = 0.778549
+Epoch 5 Iteration 400: loss = 0.516810
+Epoch 5 Iteration 450: loss = 0.816200
+Epoch 5 Iteration 500: loss = 0.509133
+Epoch 5 Iteration 550: loss = 0.493144
+Epoch 5   train acc=0.7691, loss=0.6673
+Epoch 5   val   acc=0.6355, loss=0.9181
+Epoch time: 70.2712082862854
+Epoch 6 Iteration 0: loss = 0.633739
+Epoch 6 Iteration 50: loss = 0.754489
+Epoch 6 Iteration 100: loss = 0.758373
+Epoch 6 Iteration 150: loss = 0.799942
+Epoch 6 Iteration 200: loss = 0.626130
+Epoch 6 Iteration 250: loss = 0.472250
+Epoch 6 Iteration 300: loss = 0.302444
+Epoch 6 Iteration 350: loss = 0.529089
+Epoch 6 Iteration 400: loss = 0.338530
+Epoch 6 Iteration 450: loss = 0.586527
+Epoch 6 Iteration 500: loss = 0.328420
+Epoch 6 Iteration 550: loss = 0.555637
+New best model saved (val_acc=0.7807)
+Epoch 6   train acc=0.7806, loss=0.6327
+Epoch 6   val   acc=0.7807, loss=0.6203
+Epoch time: 69.12712073326111
+Epoch 7 Iteration 0: loss = 0.824573
+Epoch 7 Iteration 50: loss = 0.236831
+Epoch 7 Iteration 100: loss = 0.718628
+Epoch 7 Iteration 150: loss = 0.667757
+Epoch 7 Iteration 200: loss = 0.779751
+Epoch 7 Iteration 250: loss = 0.256187
+Epoch 7 Iteration 300: loss = 0.370222
+Epoch 7 Iteration 350: loss = 0.487761
+Epoch 7 Iteration 400: loss = 0.379789
+Epoch 7 Iteration 450: loss = 0.696952
+Epoch 7 Iteration 500: loss = 0.552983
+Epoch 7 Iteration 550: loss = 0.335803
+Epoch 7   train acc=0.7955, loss=0.5802
+Epoch 7   val   acc=0.7141, loss=0.7457
+Epoch time: 67.77793049812317
+Epoch 8 Iteration 0: loss = 0.702814
+Epoch 8 Iteration 50: loss = 0.860215
+Epoch 8 Iteration 100: loss = 0.560444
+Epoch 8 Iteration 150: loss = 1.011546
+Epoch 8 Iteration 200: loss = 0.497929
+Epoch 8 Iteration 250: loss = 0.376008
+Epoch 8 Iteration 300: loss = 0.317719
+Epoch 8 Iteration 350: loss = 0.575427
+Epoch 8 Iteration 400: loss = 0.587042
+Epoch 8 Iteration 450: loss = 0.740843
+Epoch 8 Iteration 500: loss = 0.432104
+Epoch 8 Iteration 550: loss = 0.465413
+New best model saved (val_acc=0.8462)
+Epoch 8   train acc=0.8144, loss=0.5411
+Epoch 8   val   acc=0.8462, loss=0.4332
+Epoch time: 62.17748165130615
+Epoch 9 Iteration 0: loss = 0.431023
+Epoch 9 Iteration 50: loss = 0.525998
+Epoch 9 Iteration 100: loss = 0.557279
+Epoch 9 Iteration 150: loss = 1.262897
+Epoch 9 Iteration 200: loss = 0.215285
+Epoch 9 Iteration 250: loss = 0.881070
+Epoch 9 Iteration 300: loss = 0.362681
+Epoch 9 Iteration 350: loss = 0.434608
+Epoch 9 Iteration 400: loss = 0.233177
+Epoch 9 Iteration 450: loss = 0.666023
+Epoch 9 Iteration 500: loss = 0.770714
+Epoch 9 Iteration 550: loss = 0.867624
+Epoch 9   train acc=0.8175, loss=0.5303
+Epoch 9   val   acc=0.7782, loss=0.5634
+Epoch time: 62.60926628112793
+Epoch 10 Iteration 0: loss = 0.698156
+Epoch 10 Iteration 50: loss = 1.508657
+Epoch 10 Iteration 100: loss = 0.741518
+Epoch 10 Iteration 150: loss = 0.397483
+Epoch 10 Iteration 200: loss = 0.595438
+Epoch 10 Iteration 250: loss = 0.768560
+Epoch 10 Iteration 300: loss = 0.514874
+Epoch 10 Iteration 350: loss = 0.567582
+Epoch 10 Iteration 400: loss = 0.099634
+Epoch 10 Iteration 450: loss = 0.408971
+Epoch 10 Iteration 500: loss = 0.629243
+Epoch 10 Iteration 550: loss = 0.746093
+Epoch 10   train acc=0.8236, loss=0.5080
+Epoch 10   val   acc=0.7723, loss=0.6451
+Epoch time: 62.45137405395508
+Epoch 11 Iteration 0: loss = 0.449274
+Epoch 11 Iteration 50: loss = 0.627232
+Epoch 11 Iteration 100: loss = 0.245258
+Epoch 11 Iteration 150: loss = 0.501314
+Epoch 11 Iteration 200: loss = 0.347402
+Epoch 11 Iteration 250: loss = 0.330602
+Epoch 11 Iteration 300: loss = 0.334056
+Epoch 11 Iteration 350: loss = 0.411143
+Epoch 11 Iteration 400: loss = 0.845674
+Epoch 11 Iteration 450: loss = 0.750339
+Epoch 11 Iteration 500: loss = 0.464400
+Epoch 11 Iteration 550: loss = 0.175045
+Epoch 11   train acc=0.8375, loss=0.4660
+Epoch 11   val   acc=0.7491, loss=0.7067
+Epoch time: 58.573776960372925
+Epoch 12 Iteration 0: loss = 0.487482
+Epoch 12 Iteration 50: loss = 0.622865
+Epoch 12 Iteration 100: loss = 0.720986
+Epoch 12 Iteration 150: loss = 0.589354
+Epoch 12 Iteration 200: loss = 0.407912
+Epoch 12 Iteration 250: loss = 0.137507
+Epoch 12 Iteration 300: loss = 0.421499
+Epoch 12 Iteration 350: loss = 0.113150
+Epoch 12 Iteration 400: loss = 0.315333
+Epoch 12 Iteration 450: loss = 0.621377
+Epoch 12 Iteration 500: loss = 0.257940
+Epoch 12 Iteration 550: loss = 0.178332
+Epoch 12   train acc=0.8385, loss=0.4611
+Epoch 12   val   acc=0.8382, loss=0.4300
+Epoch time: 57.28857207298279
+Epoch 13 Iteration 0: loss = 0.402498
+Epoch 13 Iteration 50: loss = 0.291090
+Epoch 13 Iteration 100: loss = 0.149490
+Epoch 13 Iteration 150: loss = 0.679566
+Epoch 13 Iteration 200: loss = 0.515847
+Epoch 13 Iteration 250: loss = 0.283389
+Epoch 13 Iteration 300: loss = 0.542900
+Epoch 13 Iteration 350: loss = 0.458714
+Epoch 13 Iteration 400: loss = 0.448749
+Epoch 13 Iteration 450: loss = 0.613089
+Epoch 13 Iteration 500: loss = 0.370772
+Epoch 13 Iteration 550: loss = 0.348779
+New best model saved (val_acc=0.8552)
+Epoch 13   train acc=0.8519, loss=0.4221
+Epoch 13   val   acc=0.8552, loss=0.4126
+Epoch time: 58.34366726875305
+Epoch 14 Iteration 0: loss = 0.693209
+Epoch 14 Iteration 50: loss = 0.323355
+Epoch 14 Iteration 100: loss = 0.389692
+Epoch 14 Iteration 150: loss = 0.475549
+Epoch 14 Iteration 200: loss = 0.474334
+Epoch 14 Iteration 250: loss = 0.372613
+Epoch 14 Iteration 300: loss = 0.373042
+Epoch 14 Iteration 350: loss = 0.504215
+Epoch 14 Iteration 400: loss = 0.341798
+Epoch 14 Iteration 450: loss = 0.373932
+Epoch 14 Iteration 500: loss = 0.414618
+Epoch 14 Iteration 550: loss = 0.149370
+Epoch 14   train acc=0.8628, loss=0.3945
+Epoch 14   val   acc=0.7665, loss=0.6426
+Epoch time: 51.43648862838745
+Epoch 15 Iteration 0: loss = 0.820133
+Epoch 15 Iteration 50: loss = 0.292014
+Epoch 15 Iteration 100: loss = 0.651956
+Epoch 15 Iteration 150: loss = 0.553933
+Epoch 15 Iteration 200: loss = 0.091850
+Epoch 15 Iteration 250: loss = 0.387575
+Epoch 15 Iteration 300: loss = 0.398629
+Epoch 15 Iteration 350: loss = 0.043177
+Epoch 15 Iteration 400: loss = 0.478442
+Epoch 15 Iteration 450: loss = 0.315552
+Epoch 15 Iteration 500: loss = 0.522262
+Epoch 15 Iteration 550: loss = 0.375825
+New best model saved (val_acc=0.8645)
+Epoch 15   train acc=0.8621, loss=0.3933
+Epoch 15   val   acc=0.8645, loss=0.4081
+Epoch time: 57.34909009933472
+Epoch 16 Iteration 0: loss = 0.643305
+Epoch 16 Iteration 50: loss = 0.209130
+Epoch 16 Iteration 100: loss = 0.458419
+Epoch 16 Iteration 150: loss = 0.258659
+Epoch 16 Iteration 200: loss = 0.218221
+Epoch 16 Iteration 250: loss = 0.166854
+Epoch 16 Iteration 300: loss = 0.334411
+Epoch 16 Iteration 350: loss = 0.240122
+Epoch 16 Iteration 400: loss = 0.204265
+Epoch 16 Iteration 450: loss = 0.295075
+Epoch 16 Iteration 500: loss = 0.180601
+Epoch 16 Iteration 550: loss = 0.288792
+Epoch 16   train acc=0.8716, loss=0.3613
+Epoch 16   val   acc=0.8174, loss=0.5011
+Epoch time: 56.383074045181274
+Epoch 17 Iteration 0: loss = 0.399557
+Epoch 17 Iteration 50: loss = 0.740155
+Epoch 17 Iteration 100: loss = 0.157422
+Epoch 17 Iteration 150: loss = 0.219688
+Epoch 17 Iteration 200: loss = 0.192679
+Epoch 17 Iteration 250: loss = 0.357546
+Epoch 17 Iteration 300: loss = 0.214378
+Epoch 17 Iteration 350: loss = 0.299579
+Epoch 17 Iteration 400: loss = 0.678131
+Epoch 17 Iteration 450: loss = 0.243086
+Epoch 17 Iteration 500: loss = 0.201276
+Epoch 17 Iteration 550: loss = 0.425571
+New best model saved (val_acc=0.8680)
+Epoch 17   train acc=0.8792, loss=0.3452
+Epoch 17   val   acc=0.8680, loss=0.3700
+Epoch time: 53.4561026096344
+Epoch 18 Iteration 0: loss = 0.217071
+Epoch 18 Iteration 50: loss = 0.204182
+Epoch 18 Iteration 100: loss = 0.323096
+Epoch 18 Iteration 150: loss = 0.504647
+Epoch 18 Iteration 200: loss = 0.361828
+Epoch 18 Iteration 250: loss = 0.070465
+Epoch 18 Iteration 300: loss = 0.579413
+Epoch 18 Iteration 350: loss = 0.346761
+Epoch 18 Iteration 400: loss = 0.499726
+Epoch 18 Iteration 450: loss = 0.344203
+Epoch 18 Iteration 500: loss = 0.737598
+Epoch 18 Iteration 550: loss = 0.141625
+New best model saved (val_acc=0.8881)
+Epoch 18   train acc=0.8855, loss=0.3289
+Epoch 18   val   acc=0.8881, loss=0.3203
+Epoch time: 62.47679686546326
+Epoch 19 Iteration 0: loss = 0.403506
+Epoch 19 Iteration 50: loss = 0.495611
+Epoch 19 Iteration 100: loss = 0.181662
+Epoch 19 Iteration 150: loss = 0.323610
+Epoch 19 Iteration 200: loss = 0.342478
+Epoch 19 Iteration 250: loss = 0.295921
+Epoch 19 Iteration 300: loss = 0.612596
+Epoch 19 Iteration 350: loss = 0.411131
+Epoch 19 Iteration 400: loss = 0.355020
+Epoch 19 Iteration 450: loss = 0.269392
+Epoch 19 Iteration 500: loss = 0.263290
+Epoch 19 Iteration 550: loss = 0.065412
+New best model saved (val_acc=0.8947)
+Epoch 19   train acc=0.8924, loss=0.3171
+Epoch 19   val   acc=0.8947, loss=0.2676
+Epoch time: 54.132357597351074
+Epoch 20 Iteration 0: loss = 0.334916
+Epoch 20 Iteration 50: loss = 0.303998
+Epoch 20 Iteration 100: loss = 0.285307
+Epoch 20 Iteration 150: loss = 0.562863
+Epoch 20 Iteration 200: loss = 0.089977
+Epoch 20 Iteration 250: loss = 0.183643
+Epoch 20 Iteration 300: loss = 0.342129
+Epoch 20 Iteration 350: loss = 0.335830
+Epoch 20 Iteration 400: loss = 0.089694
+Epoch 20 Iteration 450: loss = 0.111785
+Epoch 20 Iteration 500: loss = 0.129022
+Epoch 20 Iteration 550: loss = 0.216850
+New best model saved (val_acc=0.9040)
+Epoch 20   train acc=0.8915, loss=0.3062
+Epoch 20   val   acc=0.9040, loss=0.2581
+Epoch time: 53.1957311630249
+Epoch 21 Iteration 0: loss = 0.242033
+Epoch 21 Iteration 50: loss = 0.136929
+Epoch 21 Iteration 100: loss = 0.286285
+Epoch 21 Iteration 150: loss = 0.307149
+Epoch 21 Iteration 200: loss = 0.210073
+Epoch 21 Iteration 250: loss = 0.301087
+Epoch 21 Iteration 300: loss = 0.408187
+Epoch 21 Iteration 350: loss = 0.194720
+Epoch 21 Iteration 400: loss = 0.438278
+Epoch 21 Iteration 450: loss = 0.308720
+Epoch 21 Iteration 500: loss = 0.376828
+Epoch 21 Iteration 550: loss = 0.181573
+Epoch 21   train acc=0.8928, loss=0.3014
+Epoch 21   val   acc=0.8860, loss=0.3111
+Epoch time: 60.457228660583496
+Epoch 22 Iteration 0: loss = 0.166053
+Epoch 22 Iteration 50: loss = 0.248758
+Epoch 22 Iteration 100: loss = 0.172798
+Epoch 22 Iteration 150: loss = 0.082609
+Epoch 22 Iteration 200: loss = 0.224852
+Epoch 22 Iteration 250: loss = 0.261169
+Epoch 22 Iteration 300: loss = 0.948473
+Epoch 22 Iteration 350: loss = 0.202287
+Epoch 22 Iteration 400: loss = 0.180107
+Epoch 22 Iteration 450: loss = 0.503735
+Epoch 22 Iteration 500: loss = 0.542982
+Epoch 22 Iteration 550: loss = 0.245132
+Epoch 22   train acc=0.8989, loss=0.2835
+Epoch 22   val   acc=0.8891, loss=0.3124
+Epoch time: 57.54217028617859
+Epoch 23 Iteration 0: loss = 0.215242
+Epoch 23 Iteration 50: loss = 0.402328
+Epoch 23 Iteration 100: loss = 0.415801
+Epoch 23 Iteration 150: loss = 0.190382
+Epoch 23 Iteration 200: loss = 0.335514
+Epoch 23 Iteration 250: loss = 0.299854
+Epoch 23 Iteration 300: loss = 0.183947
+Epoch 23 Iteration 350: loss = 0.142379
+Epoch 23 Iteration 400: loss = 0.533213
+Epoch 23 Iteration 450: loss = 0.285482
+Epoch 23 Iteration 500: loss = 0.184418
+Epoch 23 Iteration 550: loss = 0.253508
+Epoch 23   train acc=0.9089, loss=0.2686
+Epoch 23   val   acc=0.8898, loss=0.3233
+Epoch time: 54.176679372787476
+Epoch 24 Iteration 0: loss = 0.204612
+Epoch 24 Iteration 50: loss = 0.070527
+Epoch 24 Iteration 100: loss = 0.317118
+Epoch 24 Iteration 150: loss = 0.058943
+Epoch 24 Iteration 200: loss = 0.372270
+Epoch 24 Iteration 250: loss = 0.412849
+Epoch 24 Iteration 300: loss = 0.512500
+Epoch 24 Iteration 350: loss = 0.206823
+Epoch 24 Iteration 400: loss = 0.087020
+Epoch 24 Iteration 450: loss = 0.081696
+Epoch 24 Iteration 500: loss = 0.170590
+Epoch 24 Iteration 550: loss = 0.265732
+Epoch 24   train acc=0.9084, loss=0.2516
+Epoch 24   val   acc=0.8839, loss=0.3282
+Epoch time: 51.473268032073975
+Epoch 25 Iteration 0: loss = 0.555997
+Epoch 25 Iteration 50: loss = 0.157952
+Epoch 25 Iteration 100: loss = 0.197464
+Epoch 25 Iteration 150: loss = 0.580125
+Epoch 25 Iteration 200: loss = 0.480019
+Epoch 25 Iteration 250: loss = 0.096847
+Epoch 25 Iteration 300: loss = 0.314382
+Epoch 25 Iteration 350: loss = 0.033357
+Epoch 25 Iteration 400: loss = 0.074536
+Epoch 25 Iteration 450: loss = 0.254563
+Epoch 25 Iteration 500: loss = 0.508611
+Epoch 25 Iteration 550: loss = 0.047978
+Epoch 25   train acc=0.9143, loss=0.2504
+Epoch 25   val   acc=0.8919, loss=0.3036
+Epoch time: 57.43087077140808
+Epoch 26 Iteration 0: loss = 0.286757
+Epoch 26 Iteration 50: loss = 0.272384
+Epoch 26 Iteration 100: loss = 0.284088
+Epoch 26 Iteration 150: loss = 0.340700
+Epoch 26 Iteration 200: loss = 0.057958
+Epoch 26 Iteration 250: loss = 0.092057
+Epoch 26 Iteration 300: loss = 0.166708
+Epoch 26 Iteration 350: loss = 0.180634
+Epoch 26 Iteration 400: loss = 0.319127
+Epoch 26 Iteration 450: loss = 0.230814
+Epoch 26 Iteration 500: loss = 0.086333
+Epoch 26 Iteration 550: loss = 0.318434
+Epoch 26   train acc=0.9141, loss=0.2455
+Epoch 26   val   acc=0.8895, loss=0.3013
+Epoch time: 52.90444087982178
+Epoch 27 Iteration 0: loss = 0.352278
+Epoch 27 Iteration 50: loss = 0.308339
+Epoch 27 Iteration 100: loss = 0.110791
+Epoch 27 Iteration 150: loss = 0.310554
+Epoch 27 Iteration 200: loss = 0.150767
+Epoch 27 Iteration 250: loss = 0.096694
+Epoch 27 Iteration 300: loss = 0.050771
+Epoch 27 Iteration 350: loss = 0.163800
+Epoch 27 Iteration 400: loss = 0.210702
+Epoch 27 Iteration 450: loss = 0.311119
+Epoch 27 Iteration 500: loss = 0.207339
+Epoch 27 Iteration 550: loss = 0.222500
+Epoch 27   train acc=0.9164, loss=0.2442
+Epoch 27   val   acc=0.8926, loss=0.3028
+Epoch time: 58.001843214035034
+Epoch 28 Iteration 0: loss = 0.150913
+Epoch 28 Iteration 50: loss = 0.210983
+Epoch 28 Iteration 100: loss = 0.024373
+Epoch 28 Iteration 150: loss = 0.358990
+Epoch 28 Iteration 200: loss = 0.300797
+Epoch 28 Iteration 250: loss = 0.049791
+Epoch 28 Iteration 300: loss = 0.268447
+Epoch 28 Iteration 350: loss = 0.151118
+Epoch 28 Iteration 400: loss = 0.232469
+Epoch 28 Iteration 450: loss = 0.297232
+Epoch 28 Iteration 500: loss = 0.075418
+Epoch 28 Iteration 550: loss = 0.396412
+Epoch 28   train acc=0.9171, loss=0.2377
+Epoch 28   val   acc=0.8898, loss=0.2975
+Epoch time: 59.45853614807129
+Epoch 29 Iteration 0: loss = 0.234162
+Epoch 29 Iteration 50: loss = 0.122910
+Epoch 29 Iteration 100: loss = 0.209164
+Epoch 29 Iteration 150: loss = 0.171602
+Epoch 29 Iteration 200: loss = 0.319346
+Epoch 29 Iteration 250: loss = 0.118752
+Epoch 29 Iteration 300: loss = 0.222560
+Epoch 29 Iteration 350: loss = 0.151795
+Epoch 29 Iteration 400: loss = 0.047028
+Epoch 29 Iteration 450: loss = 0.248116
+Epoch 29 Iteration 500: loss = 0.281308
+Epoch 29 Iteration 550: loss = 0.270283
+Epoch 29   train acc=0.9161, loss=0.2371
+Epoch 29   val   acc=0.8943, loss=0.2926
+Epoch time: 49.84679102897644
+Best val acc: 0.9040
+Total duration: 2041 seconds
