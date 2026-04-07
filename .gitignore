@@ -29,6 +29,26 @@ project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep2/wandb
 project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep3_bayes/out
 project5_CNN_cellImg_classifier/code/train_ExportModel_wandb_sweep3_bayes/wandb
 
+/project6_VAE_PubChemSMILES/data
+/project6_VAE_PubChemSMILES/code/.ipynb_checkpoints
+/project6_VAE_PubChemSMILES/code/log
+/project6_VAE_PubChemSMILES/code/run0_noSweep
+/project6_VAE_PubChemSMILES/code/run1_long_noSweep
+/project6_VAE_PubChemSMILES/code/run2_long_sweep1
+/project6_VAE_PubChemSMILES/code/run3_long_noSweep_Masking
+/project6_VAE_PubChemSMILES/code/eval_test_*
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/debug_v2_to_v3
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/out_v3RmNoGrad
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/run_long_newMask
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/test_on_small
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/*.pth
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/*.sh
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/*.py
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/*.err
+/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/*.out
+
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

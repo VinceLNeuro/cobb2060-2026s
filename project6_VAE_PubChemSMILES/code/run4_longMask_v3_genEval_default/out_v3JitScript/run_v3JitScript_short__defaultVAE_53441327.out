@@ -1,0 +1,117 @@
+Using Python: /net/dali/home/mscbio/til177/.conda/envs/csb_gen/bin/python
+Python 3.12.12
+Conda env: csb_gen
+Device: cuda
+Loaded preprocessed array: (50000, 50)
+Split: 47,500 train | 2,500 val  (val_frac=0.05, seed=42)
+Train batches per epoch: 92 | Val size: 2,500
+
+============================================================
+Model Architecture:
+  RNN cell type:   GRU
+  Bidirectional:   True
+  Embedding dim:   128
+  Hidden size:     512
+  Num layers:      2
+  Dropout:         0.1
+  Max length:      50
+  Latent dim:      1024 (fixed)
+  Vocab size:      28 (fixed)
+  Model parameters: 12,429,340
+Training:
+  Batch size:      512
+  Learning rate:   0.001
+  Max epochs:      10
+  Grad clip:       1.0
+  *Word dropout:    0.5
+  *KL max weight:   0.01
+
+============================================================
+Epoch 0 | Step 30 | Loss 1.7232 | Recon 1.7100 | KL 18.7447 | KL_w 0.0007 | 7.7s
+Epoch 0 | Step 60 | Loss 1.5337 | Recon 1.5098 | KL 21.5933 | KL_w 0.0011 | 6.8s
+Epoch 0 | Step 90 | Loss 1.4139 | Recon 1.3698 | KL 25.8723 | KL_w 0.0017 | 6.9s
+
+=== Epoch 0 done | AvgTrainLoss 1.7182 | AvgRecon 1.6938 | AvgKL 26.4279 ===
+
+  [VAL] Step 93 | Loss 1.2860 | *Recon 1.0437 | KL 24.2252
+  [GEN] Step 93 | Valid 7.0% | UniqueValid 7 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=7.0%, gen_unique_valid=7, val_recon=1.0437)
+Epoch 1 | Step 120 | Loss 1.3525 | Recon 1.2894 | KL 24.9157 | KL_w 0.0025 | 7.3s
+Epoch 1 | Step 150 | Loss 1.3373 | Recon 1.2560 | KL 22.7010 | KL_w 0.0036 | 7.0s
+Epoch 1 | Step 180 | Loss 1.3158 | Recon 1.2212 | KL 19.7429 | KL_w 0.0048 | 7.0s
+
+=== Epoch 1 done | AvgTrainLoss 1.3479 | AvgRecon 1.2766 | AvgKL 22.6261 ===
+
+  [VAL] Step 186 | Loss 1.0253 | *Recon 0.8328 | KL 19.2563
+  [GEN] Step 186 | Valid 11.0% | UniqueValid 11 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=11.0%, gen_unique_valid=11, val_recon=0.8328)
+Epoch 2 | Step 210 | Loss 1.3164 | Recon 1.2057 | KL 18.3706 | KL_w 0.0060 | 6.9s
+Epoch 2 | Step 240 | Loss 1.3314 | Recon 1.2160 | KL 16.1501 | KL_w 0.0071 | 7.1s
+Epoch 2 | Step 270 | Loss 1.3091 | Recon 1.1853 | KL 15.3812 | KL_w 0.0080 | 7.5s
+
+=== Epoch 2 done | AvgTrainLoss 1.3094 | AvgRecon 1.1969 | AvgKL 16.8655 ===
+
+  [VAL] Step 279 | Loss 0.9116 | *Recon 0.7624 | KL 14.9139
+  [GEN] Step 279 | Valid 8.0% | UniqueValid 8 | UniqueStr 100
+Epoch 3 | Step 300 | Loss 1.3006 | Recon 1.1794 | KL 13.9019 | KL_w 0.0087 | 6.9s
+Epoch 3 | Step 330 | Loss 1.2813 | Recon 1.1488 | KL 14.4343 | KL_w 0.0092 | 7.7s
+Epoch 3 | Step 360 | Loss 1.2837 | Recon 1.1498 | KL 14.1221 | KL_w 0.0095 | 7.8s
+
+=== Epoch 3 done | AvgTrainLoss 1.2944 | AvgRecon 1.1634 | AvgKL 14.5453 ===
+
+  [VAL] Step 372 | Loss 0.8606 | *Recon 0.7172 | KL 14.3364
+  [GEN] Step 372 | Valid 11.0% | UniqueValid 11 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=11.0%, gen_unique_valid=11, val_recon=0.7172)
+Epoch 4 | Step 390 | Loss 1.2893 | Recon 1.1508 | KL 14.3101 | KL_w 0.0097 | 6.4s
+Epoch 4 | Step 420 | Loss 1.2711 | Recon 1.1287 | KL 14.5277 | KL_w 0.0098 | 8.3s
+Epoch 4 | Step 450 | Loss 1.2672 | Recon 1.1199 | KL 14.9072 | KL_w 0.0099 | 8.1s
+
+=== Epoch 4 done | AvgTrainLoss 1.2737 | AvgRecon 1.1315 | AvgKL 14.5652 ===
+
+  [VAL] Step 465 | Loss 0.8371 | *Recon 0.6857 | KL 15.1399
+  [GEN] Step 465 | Valid 14.0% | UniqueValid 14 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=14.0%, gen_unique_valid=14, val_recon=0.6857)
+Epoch 5 | Step 480 | Loss 1.2442 | Recon 1.0873 | KL 15.8107 | KL_w 0.0099 | 6.2s
+Epoch 5 | Step 510 | Loss 1.2648 | Recon 1.1146 | KL 15.0887 | KL_w 0.0100 | 8.5s
+Epoch 5 | Step 540 | Loss 1.2248 | Recon 1.0677 | KL 15.7476 | KL_w 0.0100 | 8.7s
+
+=== Epoch 5 done | AvgTrainLoss 1.2501 | AvgRecon 1.0994 | AvgKL 15.1483 ===
+
+  [VAL] Step 558 | Loss 0.7987 | *Recon 0.6478 | KL 15.0914
+  [GEN] Step 558 | Valid 16.0% | UniqueValid 16 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=16.0%, gen_unique_valid=16, val_recon=0.6478)
+Epoch 6 | Step 570 | Loss 1.2275 | Recon 1.0708 | KL 15.6977 | KL_w 0.0100 | 5.9s
+Epoch 6 | Step 600 | Loss 1.2447 | Recon 1.0868 | KL 15.8006 | KL_w 0.0100 | 8.9s
+Epoch 6 | Step 630 | Loss 1.2230 | Recon 1.0703 | KL 15.2738 | KL_w 0.0100 | 8.8s
+
+=== Epoch 6 done | AvgTrainLoss 1.2341 | AvgRecon 1.0751 | AvgKL 15.9137 ===
+
+  [VAL] Step 651 | Loss 0.7882 | *Recon 0.6260 | KL 16.2132
+  [GEN] Step 651 | Valid 16.0% | UniqueValid 16 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=16.0%, gen_unique_valid=16, val_recon=0.6260)
+Epoch 7 | Step 660 | Loss 1.1998 | Recon 1.0413 | KL 15.8531 | KL_w 0.0100 | 5.3s
+Epoch 7 | Step 690 | Loss 1.2136 | Recon 1.0527 | KL 16.0937 | KL_w 0.0100 | 9.2s
+Epoch 7 | Step 720 | Loss 1.1995 | Recon 1.0366 | KL 16.2875 | KL_w 0.0100 | 9.7s
+
+=== Epoch 7 done | AvgTrainLoss 1.2160 | AvgRecon 1.0509 | AvgKL 16.5204 ===
+
+  [VAL] Step 744 | Loss 0.7656 | *Recon 0.5995 | KL 16.6152
+  [GEN] Step 744 | Valid 25.0% | UniqueValid 25 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=25.0%, gen_unique_valid=25, val_recon=0.5995)
+Epoch 8 | Step 750 | Loss 1.2088 | Recon 1.0367 | KL 17.2170 | KL_w 0.0100 | 4.8s
+Epoch 8 | Step 780 | Loss 1.2053 | Recon 1.0443 | KL 16.0983 | KL_w 0.0100 | 9.3s
+Epoch 8 | Step 810 | Loss 1.2103 | Recon 1.0367 | KL 17.3621 | KL_w 0.0100 | 9.2s
+
+=== Epoch 8 done | AvgTrainLoss 1.2015 | AvgRecon 1.0298 | AvgKL 17.1635 ===
+
+  [VAL] Step 837 | Loss 0.7631 | *Recon 0.5848 | KL 17.8319
+  [GEN] Step 837 | Valid 29.0% | UniqueValid 29 | UniqueStr 100
+  -> Saved best model (gen_valid_rate=29.0%, gen_unique_valid=29, val_recon=0.5848)
+Epoch 9 | Step 840 | Loss 1.2128 | Recon 1.0425 | KL 17.0358 | KL_w 0.0100 | 4.2s
+Epoch 9 | Step 870 | Loss 1.1930 | Recon 1.0171 | KL 17.5925 | KL_w 0.0100 | 10.2s
+Epoch 9 | Step 900 | Loss 1.2019 | Recon 1.0255 | KL 17.6415 | KL_w 0.0100 | 8.9s
+
+=== Epoch 9 done | AvgTrainLoss 1.1882 | AvgRecon 1.0104 | AvgKL 17.7749 ===
+
+Training complete. Best val loss: 0.7631. Model saved to /net/dali/home/mscbio/til177/Github/cobb2060-2026s/project6_VAE_PubChemSMILES/code/run4_longMask_v3_genEval_default/out_v3JitScript/vae_decoder_len50_Mol50k_defaultVAE_JitScript.pth
+Total duration: 264 seconds
